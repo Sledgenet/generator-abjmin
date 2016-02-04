@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title><%= name %></title>
+		
+		<script src="lib/jquery/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="lib/angular/angular-csp.css" />
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="<%= name %>.js"></script>
+		
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="css/<%= name %>.css" />
+	</head>
+	<body>
+	<div class="container">
+
+		<div ng-app="myApp" ng-controller="myCtrl">
+			<welcome-message></welcome-message>	
+			<hr />
+			<b>Docs &amp; Help</b>
+			<ul><li ng-repeat="(name, url) in urls">
+				{{ name }}: <a href="{{ url }}" target="_blank">{{ url }}</a>
+			</li></ul>
+			<hr />
+		</div><!-- /myApp -->
+		
+	</div><!-- /container -->	
+	</body>
+</html>

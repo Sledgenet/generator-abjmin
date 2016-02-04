@@ -1,0 +1,21 @@
+{
+  "name": "generator-abjmin",
+  "version": "0.0.0",
+  "description": "Minimal Angular & Bootstrap & jQuery project generator.",
+  "homepage": "www.sledgenet.co.uk",
+  "author": {
+    "name": "Mark Crawley",
+    "email": "abjmin@sledgenet.co.uk",
+    "url": "www.sledgenet.co.uk"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators\\index.js",
+  "keywords": [
+    "Minimal",
+    "Angular",
+    "Bootstrap",
+    "jQuery"
+  ]
+}
